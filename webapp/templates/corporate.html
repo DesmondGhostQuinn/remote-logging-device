@@ -1,0 +1,296 @@
+<html>
+<head>
+    <title>Corporate Visits | Agon</title>
+<style>
+    *
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{    background-image:  url("/static/img/corporatebg.jpg");
+
+    font-family: monospace;
+
+}
+
+
+
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (*.jpg). This will make the text easier to read */
+    background-image: url("/static/img/banner2.png");
+
+    /* Set a specific height */
+    height: 27%;
+    margin-left: 40px;
+    margin-right:50px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: all;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+}
+
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: rgba(255,255,255,0.2);
+  font-family: Arial;
+  margin-right:500px;
+  margin-left: 50px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+    font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.navbar b {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+  padding: 14px;
+    font-size: 16px;
+  color: white;
+  margin-right: 15px;
+
+}
+/* The dropdown container */
+.dropdown {
+  float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  opacity: 0.8;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.boxed
+{
+    background-color: none;
+
+    margin-left: 34px;
+    margin-right: 500px;
+    padding: 20px;
+    margin-top:10px;
+    padding-bottom: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.txt
+{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+
+    font-family: "Exo", sans-serif;
+    font-size: 35px;
+    color: white;
+text-shadow: 2px 2px 1px #000000bf;
+
+}
+
+.para
+{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+
+
+    font-family: "Exo", sans-serif;
+    font-size: 16.5px;
+    color: white;
+    text-shadow: 2px 2px 1px #000000bf;
+
+
+}
+
+.para a
+{
+    color: #332C2C;
+    text-decoration: none;
+
+}
+.para a:hover
+{
+    opacity: 0.6;
+}
+.log {
+
+    align-content: right;
+    text-align: right;
+    position: absolute;
+    top: 8%;
+    left:89.1%;
+    transform: translate(-50%, -50%);
+    color: #008000;
+    font-size:20px;
+    font-family: sans-serif;
+}
+
+
+.log a:link, .log a:visited {
+    background-color: black;
+    opacity:1;
+    color: #008000;
+    padding: 10px 18px;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none;
+    display: inline-block;
+     border-radius: 25px;
+}
+
+.log a:hover
+{
+  opacity:0.8;
+}
+
+.wrapper{
+  margin-left: 28px;
+  margin-right: 28px;
+  padding: 28px;
+  font-family: sans-serif;
+  font-size:16px;
+  color:white;
+}
+
+.reg a:hover, .reg a:active {
+    opacity: 0.7;
+    }
+
+
+.signupbutton
+{
+    position: absolute;
+    left: 65%;
+    top: 57%;
+}
+
+
+.signupbutton a img
+  {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+
+
+
+</style>
+
+
+</head>
+<body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <header>
+
+ <div class="hero-image">
+
+</div>
+
+<div class="log">
+
+  <a href="{{url_for('login')}}">Score Zone</a>
+
+</div>
+
+
+
+
+
+<div class="navbar">
+ <a href={{url_for('home')}}>Home</a>
+     <a href="{{url_for('gallery')}}">Gallery</a>
+ <a href="{{url_for('faq')}}">FAQ</a>
+   <a href="{{url_for('team')}}">Team</a>
+
+   <div class="dropdown">
+   <button class="dropbtn">Services
+     <i class="fa fa-caret-down"></i>
+   </button>
+   <div class="dropdown-content">
+     <a href="{{url_for('corporate')}}">Corporate</a>
+     <a href="{{url_for('rental')}}">Rental</a>
+     <a href="{{url_for('why')}}">Become a Laser Maze Space</a>
+   </div>
+ </div>
+ <div class="dropdown">
+   <button class="dropbtn">Terms
+     <i class="fa fa-caret-down"></i>
+   </button>
+   <div class="dropdown-content">
+     <a href="{{url_for('tnc')}}">Terms & Conditions</a>
+     <a href="{{url_for('refund')}}">Refund Policy</a>
+   </div>
+ </div>
+      <a href="{{url_for('member')}}">Becoming a Member</a>
+
+
+
+ <a href="{{url_for('contact')}}" >Contact</a>
+</div>
+
+<br><br><br>
+    <div class="wrapper">
+        <ul>
+            <h2>Tired of just working?</h2>
+            <br><br>
+            <p>How can you think outside the box when you work in one, said a very wise cubicle-bound professional. We couldn’t agree more. Nothing like a game to get the teamwork going. Who says boardrooms need four walls — crack strategy on the field. Talk to us to find out more about our corporate packages for offsites, team building activities, leadership meets, outbound learning and more.
+</p>
+<br>
+<p>To know more, you can <a href="url_for('contact')">contact us.</a></p>
