@@ -1,0 +1,505 @@
+<html>
+<head>
+    <title>Our Team | Agon</title>
+
+
+     <style>
+
+     body
+{
+}
+
+h1 {
+    margin-top: 10px;
+    margin-left:50px;
+    text-align: left;
+    font-size: 30;
+    color:white;
+}
+
+h2 {
+    color:white;
+}
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 300px;
+    margin: 50px;
+    margin-top: 40px;
+    height:300px;
+    padding: 0 8px;
+    padding-bottom: 300px;
+
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 100px;
+    }
+}
+
+/* Add some shadows to create a card effect */
+
+
+.card img
+{
+    max-height: 190px;
+    max-width: 300px;
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    background-color: white;
+}
+
+.title {
+    color: gray;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    background-color: #fff;
+    text-align: center;
+    color:black;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+    *
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+body
+{
+    background-image:  url("/static/img/teambg.jpg");
+    background-size: cover;
+    font-family: monospace;
+}
+
+@keyframes shake
+{
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (*.jpg). This will make the text easier to read */
+    background-image: url("/static/img/banner2.png");
+
+    /* Set a specific height */
+    height: 23%;
+    margin-left: 40px;
+    margin-right:50px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: all;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    align-content: right;
+    text-align: right;
+    padding: 10px;
+
+    background-color: green;
+    position: absolute;
+    top: 5%;
+    left:90%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: rgba(255,255,255,0.3);
+  font-family: Arial;
+  margin-right:500px;
+  margin-left: 50px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+    font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.navbar b {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+  padding: 14px;
+    font-size: 16px;
+  color: white;
+  margin-right: 15px;
+
+}
+/* The dropdown container */
+.dropdown {
+  float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  opacity: 0.8;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.boxed
+{
+    background-color: none;
+
+    margin-left: 34px;
+    margin-right: 500px;
+    padding: 20px;
+    margin-top:10px;
+    padding-bottom: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.txt
+{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+
+    font-family: "Exo", sans-serif;
+    font-size: 35px;
+    color: white;
+text-shadow: 2px 2px 1px #000000bf;
+
+}
+
+.para
+{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+
+
+    font-family: "Exo", sans-serif;
+    font-size: 16.5px;
+    color: white;
+    text-shadow: 2px 2px 1px #000000bf;
+
+
+}
+
+.para a
+{
+    color: #332C2C;
+    text-decoration: none;
+
+}
+.para a:hover
+{
+    opacity: 0.6;
+}
+
+.log {
+
+    align-content: right;
+    text-align: right;
+    position: absolute;
+    top: 8%;
+    left:89.1%;
+    transform: translate(-50%, -50%);
+    color: #008000;
+    font-size:20px;
+    font-family: sans-serif;
+}
+
+
+.log a:link, .log a:visited {
+    background-color: black;
+    opacity:1;
+    color: #008000;
+    padding: 10px 18px;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none;
+    display: inline-block;
+     border-radius: 25px;
+}
+
+.log a:hover
+{
+  opacity:0.8;
+}
+
+
+
+
+
+.signupbutton
+{
+    position: absolute;
+    left: 65%;
+    top: 57%;
+}
+
+
+.signupbutton a img
+  {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+
+
+
+body
+{
+}
+
+h1 {
+    margin-top: 10px;
+    margin-left:50px;
+    text-align: left;
+    font-size: 30;
+    color:white;
+}
+
+h2 {
+    color:white;
+}
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 300px;
+    margin: 50px;
+    margin-top: 40px;
+    height:300px;
+    padding: 0 8px;
+    padding-bottom: 300px;
+
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 100px;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255,255,255,0.3);
+
+}
+
+.card img
+{
+    max-height: 190px;
+    max-width: 300px;
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    background-color: white;
+}
+
+.title {
+    color: white;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    background-color: #fff;
+    text-align: center;
+    color:black;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+
+   </style>
+</head>
+
+<body background="/static/img/teacherbg.jpg">
+
+  <div class="hero-image">
+
+</div>
+
+
+<div class="navbar">
+ <a href={{url_for('home')}}>Home</a>
+     <a href="{{url_for('gallery')}}">Gallery</a>
+ <a href="{{url_for('faq')}}">FAQ</a>
+   <a href="{{url_for('team')}}">Team</a>
+
+   <div class="dropdown">
+   <button class="dropbtn">Services
+     <i class="fa fa-caret-down"></i>
+   </button>
+   <div class="dropdown-content">
+     <a href="{{url_for('corporate')}}">Corporate</a>
+     <a href="{{url_for('rental')}}">Rental</a>
+     <a href="{{url_for('why')}}">Become a Laser Maze Space</a>
+   </div>
+ </div>
+ <div class="dropdown">
+   <button class="dropbtn">Terms
+     <i class="fa fa-caret-down"></i>
+   </button>
+   <div class="dropdown-content">
+     <a href="{{url_for('tnc')}}">Terms & Conditions</a>
+     <a href="{{url_for('refund')}}">Refund Policy</a>
+   </div>
+ </div>
+      <a href="{{url_for('member')}}">Becoming a Member</a>
+
+
+
+ <a href="{{url_for('contact')}}" >Contact</a>
+</div>
+
+<div class="log">
+
+  <a href="{{url_for('login')}}">Score Zone</a>
+
+</div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/static/img/founder.jpg" alt="Gerald" style="width:100%">
+      <div class="container">
+        <br><br><h2>Abhishek Singh</h2><br>
+        <p class="title">Founder</p><br>
+        <p class="title">Abhishek is an Embedded System Designer who founded Agon Interactive out of his passion for gaming and simulated realities. </p><br>
+        <p class="title">founder@agoninteractive.com</p><br><br>
+        <p><button class="button">Contact</button></p><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/img/rubeena.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <br><br><h2>Rubeena Bhargava</h2><br>
+        <p class="title">Systems Engineer</p><br>
+        <p class="title"> Rubeena specializes in life-quality technologies, in particular, automated systems, education, and hardware programming.</p><br>
+        <p class="title"> rubeenabhargava@agoninteractive.com</p><br><br>
+        <p><button class="button">Contact</button></p><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/img/tanya.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <br><br><h2>Tanya Nordvik</h2><br>
+        <p class="title">Project Manager</p><br>
+        <p class="title">Tanya is an IT expert who specializes in management consultancy, business development and large-scale project management.</p><br>
+        <p class="title">tanya@agoninteractive.com</p><br><br>
+        <p><button class="button">Contact</button></p><br>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
